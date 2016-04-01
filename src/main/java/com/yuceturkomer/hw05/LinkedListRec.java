@@ -159,6 +159,7 @@ public class LinkedListRec<E> {
      * @param outData The data to be removed
      * @return true if the items is removed and false otherwise
      */
+    @SuppressWarnings("unchecked")
     private boolean remove(Node<E> head, Node<E> pred, E outData) {
         if (head == null) {
             return false;//
@@ -177,6 +178,7 @@ public class LinkedListRec<E> {
      * @param outData The data to be removed
      * @return true if the item is removed, and false otherwise
      */
+    @SuppressWarnings("unchecked")
     public boolean remove(E outData) {
         if (head == null) {
             return false;
