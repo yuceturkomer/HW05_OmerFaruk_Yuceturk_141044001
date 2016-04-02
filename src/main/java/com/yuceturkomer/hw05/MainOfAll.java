@@ -35,6 +35,8 @@ public class MainOfAll {
         System.out.println("Part 2 LinkedList\n" + intTestp2.toString() + "\n");
         intTestp2.remove(4);
         System.out.println("Part 2 LinkedList after removing integer 4\n" + intTestp2.toString() + "\n");
+        intTestp2.remove(5);
+        System.out.println("Part 2 LinkedList after removing integer 5\n" + intTestp2.toString() + "\n");
 
         /*-------------------------PART 2 TEST END-----------------------------*/
 

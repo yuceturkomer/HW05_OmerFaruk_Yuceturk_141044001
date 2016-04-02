@@ -6,6 +6,7 @@ import java.util.Stack;
 
 /**
  * TowerOfHanoi iterative solution
+ * Didn't do any junit tests but tested in main.
  */
 public class TowerOfHanoiClass {
     private Stack<Integer> srcStack = new Stack<Integer>();
@@ -14,18 +15,30 @@ public class TowerOfHanoiClass {
 
     /**
      * Prints the move that made.
+     *
      * @param from Char from where
-     * @param to Char to where
+     * @param to   Char to where
      * @param disk Disk's int value as size
      */
     private void printMove(char from, char to, int disk) {
         System.out.println("Moving disk " + disk + " from \"" + from + "\" to \"" + to + "\"\n");
     }
 
+    /**
+     * The no parameter class.
+     */
     public TowerOfHanoiClass() {
 
     }
 
+    /**
+     * The core method for playing the game.
+     *
+     * @param diskSize The number of disks initially source has.
+     * @param src      The source stack
+     * @param dst      The destination stack
+     * @param aux      The helper stack aux
+     */
     public void TowerOfHanoi(int diskSize, char src, char dst, char aux) {
         char temp;
         if (diskSize % 2 == 0) {
@@ -48,6 +61,13 @@ public class TowerOfHanoiClass {
 
     }
 
+    /**
+     * Moves the disk for one step. The direction can change by stacks' situations.
+     * @param src The source stack
+     * @param dest The destination stack
+     * @param s The char that represents source
+     * @param d The char that represents destination
+     */
     private void moveBetween(Stack<Integer> src, Stack<Integer> dest, char s, char d) {
         int pole1Top, pole2Top;
 
