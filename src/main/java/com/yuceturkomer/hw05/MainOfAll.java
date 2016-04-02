@@ -6,7 +6,13 @@ import java.util.List;
  * Main class for testing all the parts
  */
 public class MainOfAll {
+    @SuppressWarnings("unchecked")
     public static void main(String args[]) {
+        /*----------------------------PART 1 TEST------------------------------*/
+        System.out.println("\n\n******************* PART 1 TESTS ******************\n\n");
+        TowerOfHanoiClass tOfHanoi = new TowerOfHanoiClass();
+        tOfHanoi.TowerOfHanoi(3,'S','D','A');
+        /*-------------------------PART 1 TEST END-----------------------------*/
 
         /*----------------------------PART 2 TEST------------------------------*/
 
